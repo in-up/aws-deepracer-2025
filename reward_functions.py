@@ -9,7 +9,7 @@ def reward_function(params):
     track_width = params['track_width']
     distance_from_center = params['distance_from_center']
 
-    # Calculate 3 markers that are increasingly further away from the center lines
+    # Calculate 3 markers that are increasingly further away from the center line
     marker_1 = 0.1 * track_width
     marker_2 = 0.25 * track_width
     marker_3 = 0.5 * track_width

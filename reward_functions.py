@@ -25,4 +25,3 @@ def reward_function(params):
         reward = 1e-3  # likely crashed/ close to off track
 
     return reward
-#asda

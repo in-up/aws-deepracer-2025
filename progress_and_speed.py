@@ -17,11 +17,11 @@ def reward_function(params):
     progress = params["progress"]  # (0 - 100)
     steps = max(params["steps"], 1)
 
-    # 2) 중앙선 거리 비교
+    # 중앙선 거리 비교
     max_dist = track_w * 0.5
     distance_factor = max(1e-3, 1 - (dist / max_dist) ** 2)  # (0 - 1)
 
-    # 3) 조향 및 속도 상호작용
+    # 조향 및 속도 상호작용
     speed_norm = speed / MAX_SPEED  # (0 - 1)
 
     if steer < 5:           # Case 1 : 직선 구간
@@ -42,7 +42,7 @@ def reward_function(params):
     # 목표 속도와 실제 속도 차이 기반 보상 적용
     speed_target_factor = math.exp(-((speed - target_v) ** 2) / (2 * 0.4 ** 2))
 
-    # 5) 진행도 대비
+    # 진행도 대비
     progress_efficiency = (progress / steps) * 100
 
     # 보상값 계산

@@ -43,3 +43,6 @@
 |   2   |     00:12.629    |               100%                | Lap complete |     0     |        --         |    0    |
 |   3   |     00:12.858    |               100%                | Lap complete |     0     |        --         |    0    |
 
+---
+### 성과 (Achievement)
+- 2025 경기대학교 **AWS DeepRacer League 준우승(2위)**
